@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        .content-container {
+            text-align: right;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 222px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <div class="cryptohopper-web-widget" data-id="1" data-price_format="2" data-realtime="on" data-currency="KRW"></div>
+    </div>
+</body>
+<script src="https://www.cryptohopper.com/widgets/js/script"></script>
+</html>
+{% endblock %}
